@@ -9,157 +9,172 @@
 	</head>
 	<body>
 		<div class="main-grid">
-			<div class="header">
-				<div class="container header__container">
-					<div class="header__menu-main" aria-label="Primary">
-						<ul class="menu">
-							<li class="menu__item">
-								<a class="menu__link" href="#">Women</a>
-							</li>
-							<li class="menu__item">
-								<a class="menu__link" href="#">Men</a>
-							</li>
-							<li class="menu__item">
-								<a class="menu__link" href="#">Kids</a>
-							</li>
-							<li class="menu__item">
-								<a class="menu__link" href="#">Company</a>
-							</li>
-							<a class="header__logo" href="/">
-								<img class="header__logo-picture" src="images/logo.svg">
-							</a>
-							<li class="menu__item">
-								<a class="menu__link" href="#">Account</a>
-							</li>
-							<li class="menu__item">
-								<a class="menu__link" href="#">Search</a>
-							</li>
-							<li class="menu__item">
-								<a class="menu__link" href="#">Cart (0)</a>
-							</li>
-						</ul>
-					</div>
-				</div>
-			</div>
+    <div class="header">
+        <nav class="container header__container" aria-label="Primary">
+            <a class="header__logo" href="/" aria-label="На главную">
+                <img class="header__logo-picture" src="images/logo.svg" alt="Логотип компании">
+            </a>
+            <div class="header__menu-main">
+                <ul class="menu" role="menubar">
+                    <li class="menu__item" role="menuitem">
+                        <a class="menu__link" href="#">Women</a>
+                    </li>
+                    <li class="menu__item" role="menuitem">
+                        <a class="menu__link" href="#">Men</a>
+                    </li>
+                    <li class="menu__item" role="menuitem">
+                        <a class="menu__link" href="#">Kids</a>
+                    </li>
+                    <li class="menu__item" role="menuitem">
+                        <a class="menu__link" href="#">Company</a>
+                    </li>
+                    <li class="menu__item" role="menuitem">
+                        <a class="menu__link" href="#">Account</a>
+                    </li>
+                    <li class="menu__item" role="menuitem">
+                        <a class="menu__link" href="#">Search</a>
+                    </li>
+                    <li class="menu__item" role="menuitem">
+                        <a class="menu__link" href="#">Cart (0)</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
 
-			<div class="page-content">
-				<div class="container">
-					<div>
-						<ul class="breadcrumbs">
-							<li class="breadcrumbs__item">
-								<a class="breadcrumbs__link" href="#">Home</a>
-							</li>
-							<li class="breadcrumbs__item">
-								<a class="breadcrumbs__link" href="#">Women</a>
-							</li>
-							<li class="breadcrumbs__item breadcrumbs__item_active">
-								<span class="breadcrumbs__current">White unisex t-shirt</span>
-							</li>														
-						</ul>
-					</div>
-
-					<div class="product-card" id="skipLinkTarget">
-						<div class="product-card__right">
-							<h1 class="product-card__title" id="productName">White unisex t-shirt</h1>
-							<p class="product-card__price">EUR 40</p>
-							<p class="product-card__infolabel">Tax included</p>
-							<form class="product-card__form" action="#">
-								<div class="product-card__parameter">
-									<div class="product-card__label">Size</div>
-									<select class="product-size">
-										<option value="xs">XS</option>
-										<option value="s">S</option>
-										<option value="m">M</option>
-										<option value="l">L</option>
-										<option value="xl">XL</option>
-									</select>
-									<a class="size-guide-link modal-target" href="#sizeGuide">Size Guide</a>
-									<div class="modal">
-										<div class="modal-backdrop">
-											<div class="modal-body size-guide">
-												<h3 class="heading-2">Size guide</h3>
-												<p>Some description about the sizes</p>
-												<table class="size-guide__table">
-													<tr>
-														<td>EU</td>
-														<td>US</td>
-													</tr>
-													<tr>
-														<td>36</td>
-														<td>8</td>
-													</tr>
-													<tr>
-														<td>38</td>
-														<td>9</td>
-													</tr>
-													<tr>
-														<td>40</td>
-														<td>10</td>
-													</tr>
-													<tr>
-														<td>42</td>
-														<td>11</td>
-													</tr>
-												</table>
-											</div>
-										</div>
-
-									</div>
-								</div>
-								<fieldset class="product-card__parameter">
-									<legend class="product-card__label">Color<span aria-hidden="true"> - <span id="productColorValue">White</span></span></legend>
-									<ul class="input-group">
-										<li class="input-group__item">
-											<label class="input-radio">
-												<input class="input-radio__input" type="radio" name="product_color" data-name-display="White" value="white" checked aria-hidden="true">
-												<span class="input-radio__visual input-radio-color">
-													<span class="input-radio-color__sample" style="background-color: #ffffff; border: 1px #cccccc solid;"></span>
-												</span>
-											</label>
-										</li>
-										<li class="input-group__item">
-											<label class="input-radio">
-												<input class="input-radio__input" type="radio" name="product_color" data-name-display="Black" value="black" aria-hidden="true">
-												<span class="input-radio__visual input-radio-color">
-													<span class="input-radio-color__sample" style="background-color: #1a1f29;"></span>
-												</span>
-											</label>
-										</li>
-										<li class="input-group__item">
-											<label class="input-radio">
-												<input class="input-radio__input" type="radio" name="product_color" data-name-display="Gray" value="gray" aria-hidden="true">
-												<span class="input-radio__visual input-radio-color">
-													<span class="input-radio-color__sample" style="background-color: #aeaeb0;"></span>
-												</span>
-											</label>
-										</li>
-										<li class="input-group__item">
-											<label class="input-radio">
-												<input class="input-radio__input" type="radio" name="product_color" data-name-display="Purple latte" value="purple">
-												<span class="input-radio__visual input-radio-color">
-													<span class="input-radio-color__sample" style="background-color: #ba9be5;"></span>
-												</span>
-											</label>
-										</li>
-										<li class="input-group__item">
-											<label class="input-radio">
-												<input class="input-radio__input" type="radio" name="product_color" data-name-display="Color 1" value="color1" disabled aria-hidden="true">
-												<span class="input-radio__visual input-radio-color">
-													<span class="input-radio-color__sample" style="background-color: #e9a0a7;"></span>
-												</span>
-											</label>
-										</li>
-										<li class="input-group__item">
-											<label class="input-radio">
-												<input class="input-radio__input" type="radio" name="product_color" data-name-display="Color 2" value="color2" disabled aria-hidden="true">
-												<span class="input-radio__visual input-radio-color">
-													<span class="input-radio-color__sample" style="background-color: #f8cab1;"></span>
-												</span>
-											</label>												
-										</li>										
-									</ul>										
-								</fieldset>
-								<div class="product-card__parameter product-card__parameter_last">
+    <div class="page-content">
+        <div class="container">
+            <div>
+                <ul class="breadcrumbs" role="navigation" aria-label="Breadcrumbs">
+                    <li class="breadcrumbs__item">
+                        <a class="breadcrumbs__link" href="#">Home</a>
+                    </li>
+                    <li class="breadcrumbs__item">
+                        <a class="breadcrumbs__link" href="#">Women</a>
+                    </li>
+                    <li class="breadcrumbs__item breadcrumbs__item_active" aria-current="page">
+                        <span class="breadcrumbs__current">White unisex t-shirt</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+		<div class="product-card" id="skipLinkTarget">
+    <div class="product-card__right">
+        <h1 class="product-card__title" id="productName">White unisex t-shirt</h1>
+        <p class="product-card__price">EUR 40</p>
+        <p class="product-card__infolabel">Tax included</p>
+        <form class="product-card__form" action="#" aria-labelledby="productName">
+            <div class="product-card__parameter">
+                <label for="product-size" class="product-card__label">Size</label>
+                <select id="product-size" class="product-size" aria-required="true">
+                    <option value="xs">XS</option>
+                    <option value="s">S</option>
+                    <option value="m">M</option>
+                    <option value="l">L</option>
+                    <option value="xl">XL</option>
+                </select>
+                <a class="size-guide-link modal-target" href="#sizeGuide" role="button" aria-haspopup="dialog" aria-expanded="false">Size Guide</a>
+                
+                <div class="modal" aria-labelledby="sizeGuideTitle" role="dialog">
+                    <div class="modal-backdrop">
+                        <div class="modal-body size-guide">
+                            <h3 id="sizeGuideTitle" class="heading-2">Size guide</h3>
+                            <p>Some description about the sizes</p>
+                            <table class="size-guide__table" role="table">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">EU</th>
+                                        <th scope="col">US</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>36</td>
+                                        <td>8</td>
+                                    </tr>
+                                    <tr>
+                                        <td>38</td>
+                                        <td>9</td>
+                                    </tr>
+                                    <tr>
+                                        <td>40</td>
+                                        <td>10</td>
+                                    </tr>
+                                    <tr>
+                                        <td>42</td>
+                                        <td>11</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+		<fieldset class="product-card__parameter">
+    <legend class="product-card__label">Color - <span id="productColorValue">White</span></legend>
+    <ul class="input-group">
+        <li class="input-group__item">
+            <label class="input-radio" for="color-white">
+                <input class="input-radio__input" id="color-white" type="radio" name="product_color" data-name-display="White" value="white" checked>
+                <span class="input-radio__visual input-radio-color">
+                    <span class="input-radio-color__sample" style="background-color: #ffffff; border: 1px #cccccc solid;"></span>
+                </span>
+                White
+            </label>
+        </li>
+        <li class="input-group__item">
+            <label class="input-radio" for="color-black">
+                <input class="input-radio__input" id="color-black" type="radio" name="product_color" data-name-display="Black" value="black">
+                <span class="input-radio__visual input-radio-color">
+                    <span class="input-radio-color__sample" style="background-color: #1a1f29;"></span>
+                </span>
+                Black
+            </label>
+        </li>
+        <li class="input-group__item">
+            <label class="input-radio" for="color-gray">
+                <input class="input-radio__input" id="color-gray" type="radio" name="product_color" data-name-display="Gray" value="gray">
+                <span class="input-radio__visual input-radio-color">
+                    <span class="input-radio-color__sample" style="background-color: #aeaeb0;"></span>
+                </span>
+                Gray
+            </label>
+        </li>
+        <li class="input-group__item">
+            <label class="input-radio" for="color-purple">
+                <input class="input-radio__input" id="color-purple" type="radio" name="product_color" data-name-display="Purple latte" value="purple">
+                <span class="input-radio__visual input-radio-color">
+                    <span class="input-radio-color__sample" style="background-color: #ba9be5;"></span>
+                </span>
+                Purple latte
+            </label>
+        </li>
+        <li class="input-group__item">
+            <label class="input-radio" for="color-color1">
+                <input class="input-radio__input" id="color-color1" type="radio" name="product_color" data-name-display="Color 1" value="color1" disabled>
+                <span class="input-radio__visual input-radio-color">
+                    <span class="input-radio-color__sample" style="background-color: #e9a0a7;"></span>
+                </span>
+                Color 1 (Unavailable)
+            </label>
+        </li>
+        <li class="input-group__item">
+            <label class="input-radio" for="color-color2">
+                <input class="input-radio__input" id="color-color2" type="radio" name="product_color" data-name-display="Color 2" value="color2" disabled>
+                <span class="input-radio__visual input-radio-color">
+                    <span class="input-radio-color__sample" style="background-color: #f8cab1;"></span>
+                </span>
+                Color 2 (Unavailable)
+            </label>
+        </li>
+    </ul>
+</fieldset>
+  			<div class="product-card__parameter product-card__parameter_last">
 									<span class="product-card__label">Quantity</span>
 									<div class="input-quantity">
 										<button class="input-quantity__btn" data-action="decrease">&minus;</button>
@@ -389,3 +404,4 @@
 		<script src="scripts.js"></script>
 	</body>
 </html>
+
