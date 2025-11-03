@@ -8,55 +8,58 @@
 		<link href="styles.css" rel="stylesheet">
 	</head>
 	<body>
-			<div class="main-grid"  >
-				<div class="header">
-				<nav class="container header__container" aria-label="Primary">
-					<div class="header__menu-main">
-						<ul class="menu">
-							<li class="menu__item">
-								<a class="menu__link" href="#">Women</a>
-							</li>
-							<li class="menu__item">
-								<a class="menu__link" href="#">Men</a>
-							</li>
-							<li class="menu__item">
-								<a class="menu__link" href="#">Kids</a>
-							</li>
-							<li class="menu__item">
-								<a class="menu__link" href="#">Company</a>
-							</li>
-							<a class="header__logo" href="/">
-								<img class="header__logo-picture" src="images/logo.svg">
-							</a>
-							<li class="menu__item">
-								<a class="menu__link" href="#">Account</a>
-							</li>
-							<li class="menu__item">
-								<a class="menu__link" href="#">Search</a>
-							</li>
-							<li class="menu__item">
-								<a class="menu__link" href="#">Cart (0)</a>
-							</li>
-						</ul>
-					</div>
-				</nav>
-			</div>
+			<div class="main-grid">
+    <div class="header">
+        <nav class="container header__container" aria-label="Primary">
+            <a class="header__logo" href="/" aria-label="На главную">
+                <img class="header__logo-picture" src="images/logo.svg" alt="Логотип компании">
+            </a>
+            <div class="header__menu-main">
+                <ul class="menu" role="menubar">
+                    <li class="menu__item" role="menuitem">
+                        <a class="menu__link" href="#">Women</a>
+                    </li>
+                    <li class="menu__item" role="menuitem">
+                        <a class="menu__link" href="#">Men</a>
+                    </li>
+                    <li class="menu__item" role="menuitem">
+                        <a class="menu__link" href="#">Kids</a>
+                    </li>
+                    <li class="menu__item" role="menuitem">
+                        <a class="menu__link" href="#">Company</a>
+                    </li>
+                    <li class="menu__item" role="menuitem">
+                        <a class="menu__link" href="#">Account</a>
+                    </li>
+                    <li class="menu__item" role="menuitem">
+                        <a class="menu__link" href="#">Search</a>
+                    </li>
+                    <li class="menu__item" role="menuitem">
+                        <a class="menu__link" href="#">Cart (0)</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
 
-			<div class="page-content">
-				<div class="container">
-					<div>
-						<ul class="breadcrumbs">
-							<li class="breadcrumbs__item">
-								<a class="breadcrumbs__link" href="#">Home</a>
-							</li>
-							<li class="breadcrumbs__item">
-								<a class="breadcrumbs__link" href="#">Women</a>
-							</li>
-							<li class="breadcrumbs__item breadcrumbs__item_active">
-								<span class="breadcrumbs__current">White unisex t-shirt</span>
-							</li>														
-						</ul>
-					</div>
+    <div class="page-content">
+        <div class="container">
+            <div>
+                <ul class="breadcrumbs" role="navigation" aria-label="Breadcrumbs">
+                    <li class="breadcrumbs__item">
+                        <a class="breadcrumbs__link" href="#">Home</a>
+                    </li>
+                    <li class="breadcrumbs__item">
+                        <a class="breadcrumbs__link" href="#">Women</a>
+                    </li>
+                    <li class="breadcrumbs__item breadcrumbs__item_active" aria-current="page">
+                        <span class="breadcrumbs__current">White unisex t-shirt</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
 
 						<div class="product-card" id="skipLinkTarget">
 						<div class="product-card__right">
@@ -390,6 +393,7 @@
 	</body>
 
 </html>
+
 
 
 
