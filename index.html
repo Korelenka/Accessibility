@@ -10,9 +10,9 @@
 	<body>
 		<div class="main-grid">
     <div class="header">
-        <nav class="container header__container" aria-label="Primary">
+        <nav class="container header__container" aria-label="Primary"> <!-- тег <nav> -->
             <a class="header__logo" href="/" aria-label="На главную">
-                <img class="header__logo-picture" src="images/logo.svg" alt="Логотип компании">
+                <img class="header__logo-picture" src="images/logo.svg" alt="Логотип компании"> <!-- тег alt-описание -->
             </a>
             <div class="header__menu-main">
                 <ul class="menu" role="menubar">
@@ -35,7 +35,7 @@
                         <a class="menu__link" href="#">Search</a>
                     </li>
                     <li class="menu__item" role="menuitem">
-                        <a class="menu__link" href="#">Cart (0)</a>
+                        <a class="menu__link" href="#" aria-label="Перейти в корзину">Cart (0)</a>
                     </li>
                 </ul>
             </div>
@@ -75,15 +75,13 @@
                     <option value="l">L</option>
                     <option value="xl">XL</option>
                 </select>
-                <a class="size-guide-link modal-target" href="#sizeGuide" role="button" aria-haspopup="dialog" aria-expanded="false">Size Guide</a>
-                
-                <div class="modal" aria-labelledby="sizeGuideTitle" role="dialog">
-                    <div class="modal-backdrop">
-                        <div class="modal-body size-guide">
-                            <h3 id="sizeGuideTitle" class="heading-2">Size guide</h3>
-                            <p>Some description about the sizes</p>
-                            <table class="size-guide__table" role="table">
-                                <thead>
+               		<a class="size-guide-link modal-target" href="#sizeGuide">Size Guide</a>
+									<div class="modal">
+										<div class="modal-backdrop">
+											<div class="modal-body size-guide">
+												<h3 class="heading-2">Size guide</h3>
+												<p>Some description about the sizes</p>
+												<table class="size-guide__table">
                                     <tr>
                                         <th scope="col">EU</th>
                                         <th scope="col">US</th>
@@ -105,18 +103,14 @@
                                     <tr>
                                         <td>42</td>
                                         <td>11</td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </form>
-    </div>
-</div>
+                               </table>
+											</div>
+										</div>
+
+									</div>
+								</div>
 		<fieldset class="product-card__parameter">
-    <legend class="product-card__label">Color - <span id="productColorValue">White</span></legend>
+    	<legend class="product-card__label">Color<span aria-hidden="true"> - <span id="productColorValue">White</span></span></legend>
     <ul class="input-group">
         <li class="input-group__item">
             <label class="input-radio" for="color-white">
@@ -428,5 +422,6 @@
 		<script src="scripts.js"></script>
 	</body>
 </html>
+
 
 
