@@ -62,7 +62,7 @@
 							<h1 class="product-card__title" id="productName">White unisex t-shirt</h1>
 							<p class="product-card__price">EUR 40</p>
 							<p class="product-card__infolabel">Tax included</p>
-							<form class="product-card__form" action="#">
+							<form class="product-card__form" action="#" aria-labelledby="productName">
 								<div class="product-card__parameter">
 									<div class="product-card__label">Size</div>
 									<select class="product-size">
@@ -161,7 +161,7 @@
 								<div class="product-card__parameter product-card__parameter_last">
 									<span class="product-card__label">Quantity</span>
 									<div class="input-quantity">
-										<button class="input-quantity__btn" data-action="decrease">&minus;</button>
+										<button class="input-quantity__btn" data-action="decrease"aria-label="Уменьшить количество">&minus;</button>
 										<input type="number" class="input-quantity__field" id="productQuantity" name="product_quantity" value="1">
 										<button class="input-quantity__btn" data-action="increase">&plus;</button>
 									</div>
@@ -388,6 +388,7 @@
 		<script src="scripts.js"></script>
 	</body>
 </html>
+
 
 
 
